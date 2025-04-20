@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      body {
+        background-color: black;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 350px;
+        border-radius: 10px;
+      }
+
+      h1 {
+        text-align: center;
+        width: 100%;
+      }
+
+      input,select,button {
+        width: 90%;
+        margin-bottom: 1rem;
+        padding: 0.7rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ccc;
+        outline: none;
+      }
+      button{
+        background-color: blue;
+        color: white;
+        font-size: 1.2rem;
+        border-radius: 10px;
+      }
+      .result{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: #222;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <h1>Temprature Unit Converter</h1>
+      <input type="number" name="number" id="value" />
+      <select name="units" id="units">
+        <option value="default">Select Unit</option>
+        <option value="celcius">To Celcius</option>
+        <option value="fernhite">To Fernihite</option>
+      </select>
+      <button id="btn">Convert</button>
+      <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
